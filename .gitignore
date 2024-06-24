@@ -16,3 +16,6 @@
 .python_history
 .sudo_as_admin_successful
 .bash_history
+.vscode
+.arduino15
+bin

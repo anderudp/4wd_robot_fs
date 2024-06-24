@@ -111,3 +111,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+#alias arduino-cli='$PWD/bin/arduino-cli'
+
+yeet(){
+    arduino-cli compile -b arduino:avr:uno "$1"
+    arduino-cli upload -p /dev/ttyACM0 -b arduino:avr:uno "$1"
+}
